@@ -37,6 +37,9 @@ const Counter = () => {
             className="btn bg-red-600"
             >Reset</button>
 
+            <h2 className="font-bold text-green-600 mt-20 text-5xl mb-10">Redux Principle:</h2>
+            <img className="w-[500px]  mx-auto" src="https://i.ibb.co/fvvbrB4/1703844692042.gif" alt="" />
+
         </div>
     );
 };

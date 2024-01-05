@@ -1,8 +1,18 @@
-# React + Vite
+# Counter App Using Redux
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### STEP
 
-Currently, two official plugins are available:
+* State
+* Action
+* Reducer
+* Store
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Redux is a JavaScript Library. Redux is a predictable state container for JavaScript
+
+### Important Note: 
+
+* Define Constant 
+* Define the intial State
+* Define Action [* INCREMENT * DECREMENT * RESET]
+* Set up reducer based on the action
+* Finaly store the state in globally.

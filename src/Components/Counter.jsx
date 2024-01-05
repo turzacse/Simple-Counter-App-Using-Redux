@@ -1,20 +1,41 @@
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { decrementCounter, incrementCounter, resetCounter } from "../StateManagement/Action/CounterAction";
 
 const Counter = () => {
 
     const count = useSelector(state => state.count);
-    console.log(count);
-    const handleIncrement = () => {
+    // console.log(count);
+    const dispatch = useDispatch();
 
+    const handleIncrement = () => {
+        dispatch(incrementCounter());
     }
+
+    const handleDecrement = () => {
+        dispatch(decrementCounter());
+    }
+
+    const handleReset = () => {
+        dispatch(resetCounter());
+    }
+
     return (
         <div className="text-center">
-            <h2 className="text-3xl mt-20 font-bold mb-10">Count : 0 </h2>
+            <h2 className="text-3xl mt-20 font-bold mb-10">Count : {count} </h2>
             <button 
             onClick={handleIncrement}
-            className="btn btn-primary">Increment</button>
-            <button className="btn btn-warning mx-5">Decrement</button>
-            <button className="btn bg-red-600">Reset</button>
+            className="btn btn-primary"
+            >Increment</button>
+
+            <button
+            onClick={handleDecrement}
+            className="btn btn-warning mx-5"
+            >Decrement</button>
+
+            <button
+            onClick={handleReset}
+            className="btn bg-red-600"
+            >Reset</button>
 
         </div>
     );
